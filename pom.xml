@@ -26,7 +26,7 @@
 
   <groupId>nl.openweb.hippo</groupId>
   <artifactId>hst-diagnostics-extension</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>HST Page Diagnostics Extension</name>
@@ -47,7 +47,7 @@
     <connection>scm:git:git@github.com:openweb-nl/hst-diagnostics-extension.git</connection>
     <developerConnection>scm:git:git@github.com:openweb-nl/hst-diagnostics-extension.git</developerConnection>
     <url>https://github.com/openweb-nl/hst-diagnostics-extension</url>
-    <tag>hst-diagnostics-extension-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
