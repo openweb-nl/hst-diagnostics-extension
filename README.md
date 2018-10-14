@@ -1,20 +1,19 @@
-# hst-diagnostics-extension
-HST Page Diagnostics extension
+# Introduction
+This is a plugin for Hippo ([Hippo CMS](https://www.onehippo.org)) Site Toolkit that enable users to profile their code via annotations.
 
 # USAGE
 
-Add the following dependency to your site  project (Or a dependency of your site project)
+**Step 1:** Add the following dependency to your project /site/pom.xml file (Or a dependency of your project's site)
 
 ```xml
 <dependency>
   <groupId>nl.openweb.hippo</groupId>
   <artifactId>hst-diagnostics-extension</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <scope>compile</scope>
+  <version>1.0.0</version>
 </dependency>
 ```
-
-```xml
+**Step 2:** Add the following profile to your project /site/pom.xml file
+```xml 
 <profile>
   <id>profile</id>
   <dependencies>
@@ -22,7 +21,6 @@ Add the following dependency to your site  project (Or a dependency of your site
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjrt</artifactId>
       <version>${aspectjweaver.version}</version>
-      <scope>compile</scope>
     </dependency>
   </dependencies>
   <build>
@@ -58,3 +56,15 @@ Add the following dependency to your site  project (Or a dependency of your site
   </build>
 </profile>
 ```
+**Step 3:** Add @Timed annotations to some methods in your project.
+```java
+@Timed
+public List<NewsDocuments> getRelatedNews() {
+	// ...
+}
+```
+**Step 4:** Build your project via profile "profile"
+```bash
+mvn clean install -Pprofile
+```
+
