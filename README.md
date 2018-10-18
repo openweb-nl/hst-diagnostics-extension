@@ -1,7 +1,8 @@
-# Introduction
+# Hippo Diagnostics Extension
+## Introduction
 This is a plugin for Hippo ([Hippo CMS](https://www.onehippo.org)) Site Toolkit that enable users to profile their code via annotations.
 
-# USAGE
+## USAGE
 
 **Step 1:** Add the following dependency to your project /site/pom.xml file (Or a dependency of your project's site)
 
