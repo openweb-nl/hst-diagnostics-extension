@@ -1,4 +1,6 @@
 # Hippo Diagnostics Extension
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopenweb-nl%2Fhst-diagnostics-extension.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopenweb-nl%2Fhst-diagnostics-extension?ref=badge_shield)
+
 ## Introduction
 This is a plugin for Hippo ([Hippo CMS](https://www.onehippo.org)) Site Toolkit that enable users to profile their code via annotations.
 
@@ -69,3 +71,7 @@ public List<NewsDocuments> getRelatedNews() {
 mvn clean install -Pprofile
 ```
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopenweb-nl%2Fhst-diagnostics-extension.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopenweb-nl%2Fhst-diagnostics-extension?ref=badge_large)
